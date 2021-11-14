@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="628.0">
+         <children>
+            <Label layoutX="98.0" layoutY="39.0" text="Secura | Secure File Backup Solution">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="149.0" text="Admin Login">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="192.0" text="Username" />
+            <Label layoutX="39.0" layoutY="226.0" text="Password" />
+            <TextField fx:id="txt_admin_username" layoutX="131.0" layoutY="188.0" />
+            <PasswordField fx:id="txt_admin_password" layoutX="131.0" layoutY="222.0" />
+            <Button id="btn_admin_login" layoutX="239.0" layoutY="275.0" mnemonicParsing="false" text="Login" onAction="#adminLogin" />
+            <Label layoutX="323.0" layoutY="147.0" text="User Login">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="190.0" text="Username" />
+            <Label layoutX="323.0" layoutY="224.0" text="Password" />
+            <TextField fx:id="txt_username" layoutX="415.0" layoutY="186.0" />
+            <PasswordField fx:id="txt_password" layoutX="415.0" layoutY="220.0" />
+            <Button id="btn_user_login" layoutX="523.0" layoutY="273.0" mnemonicParsing="false" text="Login" onAction="#userLogin" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

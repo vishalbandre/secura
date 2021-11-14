@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserDashboardController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="62.0" layoutY="30.0" text="User Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button id="btn_backup_file" fx:id="btn_add_user" layoutX="64.0" layoutY="86.0" mnemonicParsing="false" onAction="#backupFile" text="Backup File" />
+            <Button id="btn_delete_file" fx:id="btn_delete_user" layoutX="192.0" layoutY="86.0" mnemonicParsing="false" onAction="#deleteFile" text="Delete File" />
+            <TableView id="tableview" fx:id="tableview" layoutX="65.0" layoutY="132.0" prefHeight="200.0" prefWidth="471.0">
+              <columns>
+                <TableColumn fx:id="filename" prefWidth="95.0" text="Filename" />
+                <TableColumn fx:id="timestamp" prefWidth="110.0" text="Timestamp" />
+              </columns>
+            </TableView>
+            <Button id="btn_decrypt_file" fx:id="btn_add_user1" layoutX="62.0" layoutY="355.0" mnemonicParsing="false" onAction="#decryptFile" text="Get File Back" />
+            <Button id="btn_refresh" fx:id="btn_delete_user1" layoutX="315.0" layoutY="86.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
